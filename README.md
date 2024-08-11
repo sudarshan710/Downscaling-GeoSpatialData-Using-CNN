@@ -5,6 +5,12 @@
 
 Geospatial data from satellites often comes with varying resolutions due to geographic, environmental, and climatic factors. This research focuses on downscaling lower-resolution TROPOMI-SIF data to higher resolution using MODIS auxiliary data. Local Binary Patterns (LBP) are applied to capture local spatial features, which are then processed using a U-Net model to predict higher-resolution samples.
 
+### Notebooks
+
+- **SIF_MODIS_CNN.ipynb** - Implements spatial downscaling of SIF data using a Convolutional Neural Network (CNN) based on the methodology described in [Gensheimer et al. (2022)](https://bg.copernicus.org/articles/19/1777/2022/bg-19-1777-2022.pdf)..
+- **U-NET_SIF_MODIS.ipynb** - Presents an enhanced approach for spatial downscaling by incorporating Local Binary Patterns (LBP) into a U-Net architecture, offering improved efficiency and accuracy.
+
+
 ## Data Collection
 
 ### Sentinel-5P TROPOMI SIF
@@ -68,6 +74,7 @@ Adjust model parameters for optimal performance.
 - **Refer to `data_curation.ipynb`** for steps on data extraction and curation.
 - **Software**: QGIS for data curation.
 - **Data Formats**: TROPOMI_SIF (NETCDF), MODIS (HDF).
+
 
 ## License
 
